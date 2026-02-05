@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>              
+    <header>
+      <a href="#home" class="logo" aria-label="Home">
+        <img src="EGCreate.png" alt="Logo Ewelina" loading="lazy">
+      </a>
+
+      <nav>
+        <a href="#home" class="active"> Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Umiejętności</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="home-img">
+          <img src="main.jpg" class=" alt="">
+        </div>
+        <div class="home-content">
+            <h1 data-text="Cześć, tu Ewelina">Cześć, tu <span>Ewelina</span></h1>
+
+          <!-- wrap h2 + intro paragraph so they sit on the same line -->
+          <div class="meta">
+            <h2 class="header-line-two" data-text="Projektantka graficzna">Projektantka graficzna</h2>
+            <p class="lead">Zajmuję się projektowaniem grafik wektorowych. Tworzę logo, wizytówki, ulotki i projekty do nadruku – w tym grafiki do print on demand. Zapraszam do współpracy!</p>
+          </div>
+
+          <div class="social-icons">
+              <a href="https://www.linkedin.com/in/ewelina-g-11965b324/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.behance.net/ewelinamoondesign" target="_blank" ><i class="fa-brands fa-behance"></i></a>
+          </div>
+          <a href="#contact" class="btn">Zamów projekt</a>
+        </div>
+    </section>
+
+ <section id="portfolio" class="portfolio hidden">
+    <h2>Portfolio</h2>
+    <div class="portfolio-tabs">
+        <button class="tab-btn active" data-tab="logo">Logo</button>
+        <button class="tab-btn" data-tab="wizytowki">Wizytówki</button>
+        <button class="tab-btn" data-tab="menu">Ulotki/Menu</button>
+    </div>
+
+    <div class="portfolio-content">
+        <div class="tab-section" id="logo">
+            <div class="gallery">
+                
+                <div class="gallery-item">
+                    <h3 class="project-title">Projekt 1 - Firma Wykończeniowa</h3>
+                    <img src="wall_roll.png" alt="Projekt 1 logo" onclick="openLightbox('wall_roll.png')">
+                    <div class="gallery-caption">
+                        Branża: usługi wykończeniowe<br>
+                        Typ projektu: projekt koncepcyjny<br>
+                        <p>Projekt logo stworzony dla firmy specjalizującej się w usługach wykończeniowych. Kluczowym elementem identyfikacji wizualnej jest symbol wałka malarskiego wpisany w zarys domu, oraz fala imitująca pociągnięcie farbą. Zastosowana w klasyczny sposób kolorystyka podkreśla profesjonalizm, czystość i zaufanie - wartości ważne w branży wykończeniowej.</p>
+                        <p>Zastosowane kolory:</p>
+                        <div style="display: flex; gap: 2.5rem; flex-wrap: wrap;">
+                            <div>
+                                <strong>DARK BLUE</strong><br>
+                                <p>RGB: 26 28 122</p>
+                                <p>HEX: #1a1c7a</p>
+                                <p>CMYK: 79 77 0 52</p>
+                            </div>
+                            <div>
+                                <strong>TURQUOISE</strong><br>
+                                <p>RGB: 45 196 188</p>
+                                <p>HEX: #2dc4bc</p>
+                                <p>CMYK: 77 0 4 23</p>
+                            </div>
+                        </div>
+                        <div class="mockups-row">
+                            <img src="wall_roll_mockup1.png" alt="Mockup 1" onclick="openLightbox('wall_roll_mockup1.png')">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <h3 class="project-title">Projekt 2 - Plant Cake</h3>
+                    <img src="plant_cake.png" alt="Projekt 2 logo" onclick="openLightbox('plant_cake.png')">
+                    <div class="gallery-caption">
+                        Branża: gastronomiczna <br>
+                        Typ projektu: projekt koncepcyjny<br>
+                        <p>Identyfikacja wizualna dla kawiarni, której głównymi wartościami są roślinne słodkie wypieki, zdrowie i doskonały smak. Logo zostało zaprojektowane z myślą o subtelności - pastelowy róż i zieleń, miękkie linie oraz forma inspirowana muffinką i listkiem tworzą kompozycję, która przywodzi na myśl coś lekkiego, naturalnego i przyjaznego. Listek wkomponowany w muffinkę to subtelne, acz czytelne odniesienie do zdrowego stylu życia.</p>
+                        <p>Zastosowane kolory:</p>
+                        <div style="display: flex; gap: 2.5rem; flex-wrap: wrap;">
+                            <div>
+                                <strong>PASTEL ROSE</strong><br>
+                                <p>RGB: 232 197 222</p>
+                                <p>HEX: #e8c5de</p>
+                                <p>CMYK: 0 15 4 9</p>
+                            </div>
+                            <div>
+                                <strong>FRINGY FLOWER</strong><br>
+                                <p>RGB: 197 232 208</p>
+                                <p>HEX: #c5e8d0</p>
+                                <p>CMYK: 15 0 10 9</p>
+                            </div>
+                        </div>
+                        <div class="mockups-row">
+                            <img src="plant_cake_mockup1.png" alt="Mockup 1" onclick="openLightbox('plant_cake_mockup1.png')">
+                            <img src="plant_cake_mockup2.jpg" alt="Mockup 2" onclick="openLightbox('plant_cake_mockup2.jpg')">
+                        </div>
+                    </div>
+                </div>
+ <div class="gallery-item">
+                    <h3 class="project-title">Projekt 3 - EG Create</h3>
+                    <img class="AH-logo" src="EGCreate-2.png" alt="Projekt 3 logo" onclick="openLightbox('EGCreate-2.png')">
+                    <div class="gallery-caption">
+                        Branża: graficzna, design<br>
+                        Typ projektu: projekt własny<br>
+                        <p>Projekt identyfikacji wizualnej dla marki własnej EG Create. Logotyp opiera się na autorskiej, geometrycznej konstrukcji liter, która symbolizuje precyzję i nowoczesne podejście do designu. Każdy element został zaprojektowany od podstaw, aby podkreślić unikalny charakter marki oraz indywidualne podejście do realizowanych projektów.</p>
+                        <p>Zastosowane kolory:</p>
+                        <div style="display: flex; gap: 2.5rem; flex-wrap: wrap;">
+                            <div>
+                                <strong>WHITE</strong><br>
+                                <p>RGB: 255 255 255 1</p>
+                                <p>HEX: #ffffff</p>
+                                <p>CMYK: 0 0 0 0</p>
+                            </div>
+                            <div>
+                                <strong>MOON LAVENDER</strong><br>
+                                <p>RGB: 232 204 247 1</p>
+                                <p>HEX: #e8ccf7</p>
+                                <p>CMYK: 6 17 0 3</p>
+                            </div>
+                        </div>
+                        <div class="mockups-row">
+                            <img src="EG-mockup1.png" alt="Mockup 2" onclick="openLightbox('EG-mockup1.png')">
+                            <img src="EG-probki.png" alt="Mockup 3" onclick="openLightbox('EG-probki.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <h3 class="project-title">Projekt 4 - Radca prawny</h3>
+                    <img class="AH-logo" src="AH-logo.png" alt="Projekt 4 logo" onclick="openLightbox('AH-logo.png')">
+                    <div class="gallery-caption">
+                        Branża: prawna, radca prawny<br>
+                        Typ projektu: projekt komercyjny, zrealizowany<br>
+                        <p>Subtelne, nowoczesne logo zaprojektowane dla radcy prawnego (kobiety). Projekt oparty jest na inicjałach AH, wpisanych w elegancką, otwartą formę okręgu, która symbolizuje zaufanie, profesjonalizm i ciągłość. Dzięki delikatnej, jasnoniebieskiej linii i minimalistycznej estetyce, logo podkreśla poważny charakter branży prawnej, ale jednocześnie zachowuje lekkość i indywidualny styl klientki. Projekt został stworzony we współpracy z klientką i wdrożony jako oficjalne logo kancelarii.</p>
+                        <p>Zastosowane kolory:</p>
+                        <div style="display: flex; gap: 2.5rem; flex-wrap: wrap;">
+                            <div>
+                                <strong>DIGITAL SKY</strong><br>
+                                <p>RGB: 57 176 255 1</p>
+                                <p>HEX: #39B0FF</p>
+                                <p>CMYK: 78 31 0 0</p>
+                            </div>
+                            <div>
+                                <strong>BLACK</strong><br>
+                                <p>RGB: 0 0 0 1</p>
+                                <p>HEX: #000000</p>
+                                <p>CMYK: 0 0 0 100</p>
+                            </div>
+                        </div>
+                        <div class="mockups-row">
+                            <img src="AH-mockup1.png" alt="Mockup 2" onclick="openLightbox('AH-mockup1.png')">
+                            <img src="AH-mockup2.png" alt="Mockup 3" onclick="openLightbox('AH-mockup2.png')">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <h3 class="project-title">Projekt 5 - Restauracja</h3>
+                    <img class="ah-main" src="zdrowa-micha-main.png" alt="Projekt 5 logo" onclick="openLightbox('zdrowa-micha-main.png')">
+                    <div class="gallery-caption">
+                        Branża: gastronomiczna<br>
+                        Typ projektu: projekt koncepcyjny<br>
+                        <p>Logo oddaje świeżość, zdrowie i wakacyjny, hawajski klimat. Czerwona miska symbolizuje energię i dobre jedzenie, a zielone liście podkreślają naturalne, świeże składniki. Dynamiczne, zaokrąglone kształty nadają mu nowoczesny i przyjazny charakter, idealnie nawiązując do kolorowych hawajskich bowlów pełnych zdrowych i smacznych posiłków.</p>
+                        <p>Zastosowane kolory:</p>
+                        <div style="display: flex; gap: 2.5rem; flex-wrap: wrap;">
+                            <div>
+                                <strong>AMARANTH</strong><br>
+                                <p>RGB: 239 56 66 1</p>
+                                <p>HEX: #ef3842</p>
+                                <p>CMYK: 0 77 72 6</p>
+                            </div>
+                            <div>
+                                <strong>CARNATION</strong><br>
+                                <p>RGB: 241 98 106 1</p>
+                                <p>HEX: #f1626a</p>
+                                <p>CMYK: 0 59 56 5</p>
+                            </div>
+                            <div>
+                                <strong>JAPANESE LAUREL</strong><br>
+                                <p>RGB: 116 158 52 1</p>
+                                <p>HEX: #749e34</p>
+                                <p>CMYK: 27 0 67 38</p>
+                            </div>
+                        </div>
+                        <div class="mockups-row">
+                            <img src="zdrowa-micha-mockup1.png" alt="Mockup 1" onclick="openLightbox('zdrowa-micha-mockup1.png')">
+                            <img src="zdrowa-micha-mockup2.png" alt="Mockup 2" onclick="openLightbox('zdrowa-micha-mockup2.png')">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <h3 class="project-title">Projekt 6 - Retro Garage</h3>
+                    <img class="retro-garage-main" src="retro-garage-main.png" alt="Projekt 6 logo" onclick="openLightbox('retro-garage-main.png')">
+                    <div class="gallery-caption">
+                        Branża: motoryzacyjna<br>
+                        Typ projektu: projekt koncepcyjny<br>
+                        <p>Logo „Retro Garage” zostało zaprojektowane z myślą o naprawie i renowacji zabytkowych samochodów. Stylizowany wizerunek klasycznego auta na tle geometrycznych pasów podkreśla charakter retro oraz odwołuje się do tradycji motoryzacji. Projekt łączy elegancję i prostotę, tworząc spójną i rozpoznawalną identyfikację wizualną marki.</p>
+                        <p>Zastosowane kolory:</p>
+                        <div style="display: flex; gap: 2.5rem; flex-wrap: wrap;">
+                            <div>
+                                <strong>MIDNIGHT BLUE</strong><br>
+                                <p>RGB: 56 75 112 1</p>
+                                <p>HEX: #384b70</p>
+                                <p>CMYK: 50 33 0 56</p>
+                            </div>
+                            <div>
+                                <strong>VINTAGE WHITE </strong><br>
+                                <p>RGB: 233 228 211 1</p>
+                                <p>HEX: #e9e4d3</p>
+                                <p>CMYK: 0 2 9 9</p>
+                            </div>
+                            <div>
+                                <strong>BLACK OLIVE</strong><br>
+                                <p>RGB: 32 32 16 1</p>
+                                <p>HEX: #202010</p>
+                                <p>CMYK: 0 0 50 87</p>
+                            </div>
+                        </div>
+                        <div class="mockups-row">
+                            <img src="retro-garage-logo.png" alt="Mockup 1" onclick="openLightbox('retro-retro-garage-logo.png')">
+                        </div>
+                    </div>
+                </div>
+            
+            </div> </div> <div class="tab-section" id="wizytowki" style="display:none;">
+            <div class="gallery">
+                <div class="gallery-item">
+                    <h3 class="project-title">Projekt 1 - Biuro Handlowe</h3>
+                    <img src="zelin-mockup.png" alt="Biuro Handlowe wizytówka" onclick="openLightbox('zelin-mockup.png')">
+                    <div class="gallery-caption">
+                        Branża: handlowa, sprzedaż maszyn<br>
+                        Typ projektu: projekt komercyjny, zrealizowany<br>
+                        <p>Logo i wizytówka zaprojektowana dla firmy zajmującej się dystrybucją maszyn.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <h3 class="project-title">Projekt 2 - Radca Prawny</h3>
+                    <img src="AH-mockup2.png" alt="Radca prawny wizytówka" onclick="openLightbox('AH-mockup2.png')">
+                    <div class="gallery-caption">
+                        Branża:  prawna, radca prawny<br>
+                        Typ projektu: projekt komercyjny, zrealizowany<br>
+                        <p>Wizytówka radcy prawnego (na zdjęciu przedstawiono jedynie przód jako przykład). Styl minimalistyczny z subtelnym akcentem w postaci marmurowego tła.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <h3 class="project-title">Projekt 3 - Retro Garage</h3>
+                    <img src="retro-garage-wizytowka.jpg" alt="Retro Garage Wizytowka" onclick="openLightbox('retro-garage-wizytowka.jpg')">
+                    <div class="gallery-caption">
+                        Branża:  motoryzacyjna<br>
+                        Typ projektu: projekt koncepcyjny<br>
+                        <p>Koncepcja wizytówki dla warsztatu specjalizującego się w naprawie samochodów retro. Wykorzystano estetykę w stylu vintage, jednocześnie zachowując elementy charakterystyczne dla branży samochodowej i warsztatowej.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-section" id="menu" style="display:none;">
+            <div class="gallery">
+                <div class="gallery-item">
+                    <h3 class="project-title">Projekt 1 - Salon kosmetyczny</h3>
+                    <img src="lunera-mockup.jpg" alt="Projekt 1 menu" onclick="openLightbox('lunera-mockup.jpg')">
+                    <div class="gallery-caption">
+                        Branża: kosmetyczna<br>
+                        Typ projektu: projekt koncepcyjny<br>
+                        <p>Ulotka przygotowana dla salonu kosmetycznego w eleganckiej, spójnej stylistyce. Stonowane beżowe tło i ciepły brąz nadają całości luksusowego charakteru, a wyraźny podział na sekcje (zabiegi na twarz, ciało i dodatkowe usługi beauty) zapewnia przejrzysto. Delikatny cień roślinny w tle w formie elementu dekoracyjnego wprowadza naturalny, organiczny akcent i przełamuje jednolitość tła.</p>
+                        <p>Ulotka została zaprezentowana także w formie mock-upu na tle bordowej struktury i jasnej ściany, co dodatkowo uwydatnia elegancję projektu.</p>
+                        <p>Zastosowane kolory:</p>
+                        <div style="display: flex; gap: 2.5rem; flex-wrap: wrap;">
+                            <div>
+                                <strong>MOROCCO BROWN</strong><br>
+                                <p>RGB: 75 29 0</p>
+                                <p>HEX: #4b1d00</p>
+                                <p>CMYK: 0 61 100 71</p>
+                            </div>
+                            <div>
+                                <strong>PAMPAS</strong><br>
+                                <p>RGB: 244 239 237</p>
+                                <p>HEX: #f4efed</p>
+                                <p>CMYK: 0 2 3 4</p>
+                            </div>
+                            <div>
+                                <strong>PALE STONE</strong><br>
+                                <p>RGB: 216 212 212</p>
+                                <p>HEX: #d8d4d4</p>
+                                <p>CMYK: 0 2 2 15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <h3 class="project-title">Projekt 2 - Menu restauracji</h3>
+                    <img class="ah-main" src="zdrowa-micha-menu.jpg" alt="Projekt 2 menu" onclick="openLightbox('zdrowa-micha-menu.jpg')">
+                    <div class="gallery-caption">
+                        Branża: gastronomiczna<br>
+                        Typ projektu: projekt koncepcyjny<br>
+                        <p>Menu zostało zaprojektowane w spójności z logo marki - wykorzystuje tę samą paletę barwną z dominującą czerwienią miski i akcentami zieleni. Układ kolumnowy z wyraźnym podziałem sekcji zapewnia czytelność. Dzięki temu projekt tworzy harmonijną i konsekwentną identyfikację wizualną.</p>
+                        <p>Zastosowane kolory:</p>
+                        <div style="display: flex; gap: 2.5rem; flex-wrap: wrap;">
+                            <div>
+                                <strong>FAIR PINK</strong><br>
+                                <p>RGB: 255 236 237</p>
+                                <p>HEX: #ffeced</p>
+                                <p>CMYK: 0 7 7 0</p>
+                            </div>
+                            <div>
+                                <strong>CARNATION</strong><br>
+                                <p>RGB: 241 98 106 1 </p>
+                                <p>HEX: #f1626a</p>
+                                <p>CMYK: 0 59 56 5</p>
+                            </div>
+                            <div>
+                                <strong>TIBER</strong><br>
+                                <p>RGB: 4 53 52</p>
+                                <p>HEX: #043534</p>
+                                <p>CMYK: 92 0 2 79</p>
+                            </div>
+                            <div>
+                                <strong>DEEP SEA GREEN</strong><br>
+                                <p>RGB: 6 78 76</p>
+                                <p>HEX: #064e4c</p>
+                                <p>CMYK: 92 0 3 69</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> </div> </div> </section>
+
+    <section id="skills" class="skills hidden">
+  <h2>Umiejętności</h2>
+  <div class="project-text">
+    <p>Zakres wykonywanych przeze mnie usług obejmuje:</p>
+    <ul>
+      <li>Projektowanie logo, wizytówek, ulotek, menu</li>
+      <li>Projektowanie grafik wektorowych</li>
+      <li>Ilustracje print-on-demand</li>
+      <li>Tworzenie mock-up w celu prezentacji wizualnej produktu</li>
+      <li>Realizacja materiałów do social mediów (posty, rolki, grafiki promocyjne)</li>
+      <li>Programy: Adobe Illustrator, Adobe Photoshop, Inkscape, Figma, Canva </li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="contact hidden">
+    <h2>Kontakt</h2>
+    <form class="contact-form">
+      <div class="form-row">
+        <input type="text" placeholder="Imię">
+      </div>
+      <div class="form-row">
+        <input type="email" placeholder="E-mail">
+      </div>
+      <div class="form-row">
+        <textarea placeholder="Wiadomość"></textarea>
+      </div>
+      <div class="form-row">
+        <button type="submit"><i class="fa-regular fa-paper-plane"></i> Wyślij</button>
+      </div>
+    </form>
+    <div class="contact-info">
+      <p>
+        <i class="fa-solid fa-envelope"></i>
+        Mój adres e-mail: <a href="mailto:ewelina.designn@gmail.com">ewelina.designn@gmail.com</a>
+      </p>
+    </div>
+</section>
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Powiększone zdjęcie">
+</div>
+<script>
+    // --- CZĘŚĆ 1: OBSŁUGA LIGHTBOXA ---
+    // Funkcja do otwierania powiększonego zdjęcia
+    function openLightbox(src) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        lightbox.style.display = "flex"; // Ustawia lightbox na widoczny
+        lightboxImg.src = src; // Podmienia źródło obrazka
+    }
+
+    // Funkcja do zamykania powiększonego zdjęcia
+    function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none"; // Ukrywa lightbox
+    }
+
+    // --- CZĘŚĆ 2: POKAZYWANIE I UKRYWANIE SEKCJI ---
+
+    // Czekamy, aż cała strona (HTML i CSS) się załaduje
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        // Znajdujemy wszystkie linki w nawigacji i wszystkie sekcje na stronie
+        const logoLink = document.querySelector('a.logo');
+        const navLinks = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('section');
+
+        // Funkcja do pokazywania odpowiedniej sekcji na podstawie jej ID (np. "#portfolio")
+        function showSection(targetId) {
+            // Najpierw ukrywamy wszystkie sekcje, dodając im klasę .hidden
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            // Usuwamy klasę 'active' (podkreślenie) ze wszystkich linków w menu
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Znajdujemy sekcję i link, które chcemy pokazać/aktywować
+            const targetSection = document.querySelector(targetId);
+            const activeLink = document.querySelector(`nav a[href="${targetId}"]`);
+            
+            // POKAZUJEMY wybraną sekcję, usuwając z niej klasę .hidden
+            if (targetSection) {
+                targetSection.classList.remove('hidden');
+            }
+
+            // Dodajemy klasę 'active' do klikniętego linku, aby go podświetlić
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+        }
+        
+        // Pokaż sekcję 'home' na starcie strony
+        showSection('#home');
+
+        // Dodajemy "nasłuchiwanie" na kliknięcie dla logo — przejdź do home
+        if (logoLink) {
+            logoLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                showSection('#home');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // Dodajemy "nasłuchiwanie" na kliknięcie dla każdego linku w nawigacji
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); 
+                const targetId = this.getAttribute('href');
+                showSection(targetId);
+            });
+        });
+
+        // Dodaj obsługę kliknięcia dla przycisku "Zamów projekt"
+        const orderBtn = document.querySelector('.btn[href="#contact"]');
+        if (orderBtn) {
+            orderBtn.addEventListener('click', function(event) {
+                event.preventDefault();
+                showSection('#contact');
+            });
+        }
+
+        // Portfolio tab switching
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabSections = document.querySelectorAll('.tab-section');
+        tabBtns.forEach(btn => {
+          btn.addEventListener('click', function() {
+            tabBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            tabSections.forEach(section => {
+              section.style.display = section.id === btn.dataset.tab ? 'block' : 'none';
+            });
+          });
+        });
+    });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const first = document.querySelector('.home .home-content h1');
+  const second = document.querySelector('.home-content .header-line-two');
+
+  function typeText(el, speed = 80) {
+    if (!el) return Promise.resolve();
+    // read text from data-text (safer), fallback to current text
+    const full = (el.getAttribute('data-text') || el.textContent || '').trim();
+    el.textContent = '';
+    el.style.opacity = '1';
+    el.classList.add('typewrite', 'typing-caret');
+    return new Promise(resolve => {
+      let i = 0;
+      const t = setInterval(() => {
+        el.textContent += full.charAt(i);
+        i++;
+        if (i >= full.length) {
+          clearInterval(t);
+          setTimeout(() => {
+            el.classList.remove('typing-caret');
+            resolve();
+          }, 400);
+        }
+      }, speed);
+    });
+  }
+
+  (async function run() {
+    await typeText(first, 90);        // slower H1 - ~1.9s total (17 chars × 90ms + 400ms)
+    await new Promise(r => setTimeout(r, 800)); // Wait 0.8s after first line completes before starting second
+    await typeText(second, 80);       // slower H2, types after first line complete
+  })();
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const portfolioNav = document.querySelector('a[href="#portfolio"]');
+  const openPortfolioLogo = () => {
+    const portfolioSection = document.getElementById('portfolio');
+    if (portfolioSection) portfolioSection.classList.remove('hidden');
+
+    // activate logo tab button
+    const tabBtns = document.querySelectorAll('.portfolio-tabs .tab-btn');
+    const logoBtn = document.querySelector('.portfolio-tabs .tab-btn[data-tab="logo"]');
+    const tabSections = document.querySelectorAll('.tab-section');
+
+    if (tabBtns && logoBtn) {
+      tabBtns.forEach(b => b.classList.remove('active'));
+      logoBtn.classList.add('active');
+    }
+
+    if (tabSections) {
+      tabSections.forEach(s => {
+        s.style.display = (s.id === 'logo') ? 'block' : 'none';
+      });
+    }
+  };
+
+  if (portfolioNav) {
+    portfolioNav.addEventListener('click', function () {
+      // allow any existing handlers to run, then ensure logo tab is shown
+      setTimeout(openPortfolioLogo, 40);
+    });
+  }
+});
+</script>
+</body>
+</html>
