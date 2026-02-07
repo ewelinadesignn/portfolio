@@ -452,20 +452,6 @@ section {
   }
 }
 
-/* Mobile: stack home layout vertically and reduce image size */
-@media (max-width: 768px) {
-  .home {
-    flex-direction: column;
-    gap: 2rem;
-    padding: 3rem 5% 5rem;
-  }
-  .home-img img {
-    width: 130px;
-    height: auto;
-    border-radius: 0.8rem;
-  }
-}
-
 .lightbox {
   display: none;
   position: fixed;
@@ -1129,20 +1115,10 @@ section {
   .home-content .lead { font-size: 1.6rem; }
 }
 @media (max-width: 600px) {
-  .home {
-    flex-direction: column;
-    gap: 2rem;
-    padding: 3rem 5% 5rem;
-  }
   .home .home-content h1 { font-size: 3.2rem; display:block; }
   .home-content .header-line-two { font-size: 3.6rem; display:block; margin-bottom: .6rem; }
   .home-content .meta { flex-direction: column; align-items: flex-start; gap: .6rem; }
   .home-content .lead { font-size: 1.4rem; }
-  .home-img img {
-    width: 120px;
-    height: auto;
-    border-radius: 0.8rem;
-  }
 }
 
 /* wyrównanie w headerze */
