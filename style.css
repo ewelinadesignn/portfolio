@@ -93,6 +93,7 @@ nav a.active{
     gap: 6px;
     padding: 0;
     border: none;
+    pointer-events: auto;
 }
 .hamburger span{
     display: block;
@@ -133,10 +134,12 @@ nav a.active{
 
     /* Show hamburger on small screens */
     .hamburger{
-        display: flex;
+        display: flex !important;
         position: relative;
         z-index: 250;
         color: white;
+        cursor: pointer;
+        pointer-events: auto;
     }
 
     /* ensure nav appears above page content when opened */
