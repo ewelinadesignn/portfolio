@@ -747,22 +747,7 @@ section {
 
 /* Make the first image in Project 3 bigger */
 .gallery-item:nth-child(3) img {
-  max-width: 400px;
-}
-
-.gallery-item img {
-  width: 100%;
-  max-width: 300px; /* reduce from 350px for most images */
-  border-radius: 1rem;
-  cursor: pointer;
-  box-shadow: none;
-  transition: transform 0.2s;
-  margin-bottom: 1.5rem;
-}
-
-/* Make the first image in Project 3 bigger */
-.gallery-item:nth-child(3) img {
-  max-width: 400px;
+  max-width: 240px;
 }
 
 .gallery-caption {
@@ -867,7 +852,7 @@ section {
 }
 
 .gallery-item img[src="EGCreate-2.png"] {
-  max-width: 480px;
+  max-width: 180px !important;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1069,7 +1054,7 @@ section {
   /* Zakomentowane przez Monike */
   /* align-items: center; */
   /* flex-wrap: wrap; */
-  /* Dodane przez Monike w celu ustawienia tre\sci w dw\och wierszach */
+  /* Dodane przez Monike w celu ustawienia tresci w dwoch wierszach */
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 0.6rem;
