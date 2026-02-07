@@ -1162,6 +1162,24 @@ section {
   .home-content .header-line-two { font-size: 5.2rem; }
   .home-content .lead { font-size: 1.6rem; }
 }
+
+/* Tablet/small screens: hide image and left-align content */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem 5% 5rem;
+    gap: 1rem;
+  }
+  .home-img {
+    display: none;
+  }
+  .home-content {
+    width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .home {
     flex-direction: column;
