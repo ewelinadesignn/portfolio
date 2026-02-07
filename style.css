@@ -74,38 +74,6 @@ nav a{
     border-bottom: 3px solid transparent;
 }
 
-/* Hamburger button (hidden on desktop, shown on small screens) */
-.hamburger{
-  display: none; /* shown via media query */
-  background: none;
-  cursor: pointer;
-  width: 50px;
-  height: 40px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 0;
-  border: none;
-}
-.hamburger span{
-  display: block;
-  width: 32px;
-  height: 4px;
-  background: white;
-  border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-.hamburger.open span:nth-child(1){
-  transform: translateY(9px) rotate(45deg);
-}
-.hamburger.open span:nth-child(2){
-  opacity: 0;
-}
-.hamburger.open span:nth-child(3){
-  transform: translateY(-9px) rotate(-45deg);
-}
-
 nav a:hover,
 nav a.active{
     color: #a259ff;
@@ -126,22 +94,6 @@ nav a.active{
         background-color: #161616;
         border-top: 0.1rem solid rgba(0,0,0,0.1);
     }
-
-  /* Show hamburger on small screens */
-  .hamburger{
-    display: flex;
-    position: relative;
-    z-index: 250;
-    color: white;
-  }
-
-  /* ensure nav appears above page content when opened */
-  nav{
-    top: 72px; /* below header/logo */
-    right: 2rem;
-    width: calc(60% - 2rem);
-    padding: 2rem;
-  }
 
     nav.active{
         display: block;
@@ -273,22 +225,6 @@ section {
     .home{
         gap: 4rem;
     }
-}
-
-/* Mobile: stack home layout vertically, image below text */
-@media (max-width: 768px) {
-  .home {
-    flex-direction: column;
-    gap: 2rem;
-    padding: 3rem 5% 5rem;
-  }
-  .home-img img {
-    width: 200px;
-    height: 200px;
-  }
-  .home-content {
-    width: 100%;
-  }
 }
 
 
@@ -516,6 +452,20 @@ section {
   }
 }
 
+/* Mobile: stack home layout vertically and reduce image size */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 5% 5rem;
+  }
+  .home-img img {
+    width: 130px;
+    height: auto;
+    border-radius: 0.8rem;
+  }
+}
+
 .lightbox {
   display: none;
   position: fixed;
@@ -662,19 +612,6 @@ section {
 .tab-btn:hover {
   background: #a259ff;
   color: black;
-}
-
-/* Mobile: stack tabs vertically */
-@media (max-width: 768px) {
-  .portfolio-tabs {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-  .tab-btn {
-    width: 100%;
-    max-width: 300px;
-  }
 }
 
 /* Gallery layout: one project under another, centered and aesthetic */
@@ -1192,10 +1129,20 @@ section {
   .home-content .lead { font-size: 1.6rem; }
 }
 @media (max-width: 600px) {
+  .home {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 5% 5rem;
+  }
   .home .home-content h1 { font-size: 3.2rem; display:block; }
   .home-content .header-line-two { font-size: 3.6rem; display:block; margin-bottom: .6rem; }
   .home-content .meta { flex-direction: column; align-items: flex-start; gap: .6rem; }
   .home-content .lead { font-size: 1.4rem; }
+  .home-img img {
+    width: 120px;
+    height: auto;
+    border-radius: 0.8rem;
+  }
 }
 
 /* wyrównanie w headerze */
