@@ -363,8 +363,13 @@
 
 <section id="contact" class="contact hidden">
     <h2>Kontakt</h2>
-<form class="contact-form" name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact">
+  <form
+    class="contact-form"
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    action="/thanks.html"
+  >
       <div class="form-row">
         <input type="text" name="name" placeholder="Imię" required>
       </div>
@@ -375,7 +380,8 @@
         <textarea name="message" placeholder="Wiadomość" required></textarea>
       </div>
       <div class="form-row">
-        <button type="submit"><i class="fa-regular fa-paper-plane"></i> Wyślij</button>
+        <button type="submit">
+        <i class="fa-regular fa-paper-plane"></i> Wyślij</button>
       </div>
     </form>
     <div class="contact-info">
