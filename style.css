@@ -1163,10 +1163,36 @@ section {
   .home-content .lead { font-size: 1.6rem; }
 }
 @media (max-width: 600px) {
-  .home .home-content h1 { font-size: 3.2rem; display:block; }
-  .home-content .header-line-two { font-size: 3.6rem; display:block; margin-bottom: .6rem; }
+  .home {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem 5% 5rem;
+    gap: 1rem;
+  }
+  .home-img {
+    display: none;
+  }
+  .home-content {
+    width: 100%;
+    text-align: left;
+  }
+  .home .home-content h1 { font-size: 3.2rem; display:block; text-align: left; }
+  .home-content .header-line-two { font-size: 3.6rem; display:block; margin-bottom: .6rem; text-align: left; }
   .home-content .meta { flex-direction: column; align-items: flex-start; gap: .6rem; }
-  .home-content .lead { font-size: 1.4rem; }
+  .home-content .lead { font-size: 1.4rem; text-align: left; max-width: 100%; }
+  .social-icons {
+    justify-content: flex-start;
+  }
+  .social-icons a {
+    margin-left: 0;
+    margin-right: 1.5rem;
+  }
+  .btn {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
 }
 
 /* wyrównanie w headerze */
